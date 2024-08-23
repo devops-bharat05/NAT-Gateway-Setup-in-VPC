@@ -56,11 +56,13 @@ The architectural setup includes the following:
 4. **Create NAT Gateway:**  
    - Create a NAT Gateway in the public subnet and associate it with an Elastic IP.
    - Update the route table of the private subnet to route traffic to the NAT Gateway.
+
 ![Alt text](images/05_NAT_Gateway_public_subnet.jpg)
 
 5. **Configure Route Tables:**  
    - Public Subnet Route Table: Route traffic to the Internet Gateway.
    - Private Subnet Route Table: Route traffic to the NAT Gateway.
+
 ![Alt text](images/03_public_route_table.jpg)
 ![Alt text](images/04_private_route_table.jpg)
 
