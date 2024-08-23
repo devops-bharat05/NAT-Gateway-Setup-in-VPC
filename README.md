@@ -29,9 +29,11 @@ The architectural setup includes the following:
 3. **NAT Gateway:**  
    The NAT Gateway is placed in the public subnet and associated with an Elastic IP. It allows instances in the private subnet to initiate outbound traffic to the internet while keeping them isolated from inbound internet traffic.
 
-4. **Routing:**  
+
+5. **Routing:**  
    - The public subnet uses a route table with a route to the Internet Gateway.
    - The private subnet uses a route table with a route to the NAT Gateway for outbound internet traffic.
+
 
 5. **Security Groups and NACLs:**  
    Security groups and Network Access Control Lists (NACLs) are configured to allow inbound and outbound traffic as needed.
@@ -54,10 +56,13 @@ The architectural setup includes the following:
 4. **Create NAT Gateway:**  
    - Create a NAT Gateway in the public subnet and associate it with an Elastic IP.
    - Update the route table of the private subnet to route traffic to the NAT Gateway.
+![Alt text](images/05_NAT_Gateway_public_subnet.jpg)
 
 5. **Configure Route Tables:**  
    - Public Subnet Route Table: Route traffic to the Internet Gateway.
    - Private Subnet Route Table: Route traffic to the NAT Gateway.
+![Alt text](images/03_public_route_table.jpg)
+![Alt text](images/04_private_route_table.jpg)
 
 6. **Update Security Groups and NACLs:**  
    Configure security groups and NACLs to allow appropriate traffic between instances and the internet.
