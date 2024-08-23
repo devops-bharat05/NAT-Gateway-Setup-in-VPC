@@ -44,6 +44,7 @@ The architectural setup includes the following:
 2. **Create Subnets:**  
    - Create a public subnet (`test-vpc-public`) with a CIDR block in the availability zone `ap-south-1a`.
    - Create a private subnet (`test-vpc-private`) with a CIDR block in the same availability zone.
+![Alt text](images/02_subnet_of_test-vpc.jpg)
 
 3. **Create Internet Gateway and Attach to VPC:**  
    - Create an Internet Gateway.
