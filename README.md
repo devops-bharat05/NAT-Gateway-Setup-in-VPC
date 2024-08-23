@@ -45,7 +45,7 @@ The architectural setup includes the following:
    
 ![Alt text](images/01_test-vpc.jpg)
 
-3. **Create Subnets:**  
+2. **Create Subnets:**  
    - Create a public subnet (`test-vpc-public`) with a CIDR block in the availability zone `ap-south-1a`.
    - Create a private subnet (`test-vpc-private`) with a CIDR block in the same availability zone.
      
