@@ -68,6 +68,7 @@ aws ec2 create-vpc --cidr-block 12.0.0.0/16 --region ap-south-1
 
 # Create a public subnet
 aws ec2 create-subnet --vpc-id vpc-xxxxx --cidr-block 12.0.1.0/24 --availability-zone ap-south-1a
+![Alt text](images/02_subnet_of_test-vpc.jpg)
 
 # Create a private subnet
 aws ec2 create-subnet --vpc-id vpc-xxxxx --cidr-block 12.0.2.0/24 --availability-zone ap-south-1a
