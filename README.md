@@ -18,7 +18,7 @@ To securely route traffic between private subnets and the internet, while contro
 
 The architectural setup includes the following:
 
-![Alt text](images/NAT Gateway Setup in Your VPC.drawio)
+![Alt text](images/00_Architectural_Diagram.jpg)
 
 1. **VPC Creation:**  
    The VPC is created in the Mumbai region (`ap-south-1`) with a CIDR block of `12.0.0.0/16`.
